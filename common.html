@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模板</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--插件样式-->
+    <link href="bootstrap/css/bootstrap.css"  rel="stylesheet" type="text/css" />
+    <link href="bootstrap/css/bootstrap-table.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="laydate/need/laydate.css" rel="stylesheet" type="text/css"/>
+    <link href="smartpaginator/css/smartpaginator.css" rel="stylesheet" type="text/css">
+    <!--公用样式-->
+    <link href="css/common.css" rel="stylesheet" type="text/css"/>
+    <!--本页样式-->
+
+    <!--公用JS-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap-table.js"></script>
+    <script type="text/javascript" src="laydate/laydate.js"></script>
+    <script type="text/javascript" src="smartpaginator/js/smartpaginator.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/select.js"></script>
+    <!-- 本页JS -->
+
+</head>
+<body >
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">通用模板</a>
+            </div>
+            <p class="navbar-text navbar-right">2016.8.25</p>
+        </div>
+    </nav>
+    <div class="container" >
+        <div class="row ">
+          <!--标题-->
+
+          <div class="alert alert-success col-md-12" role="alert">标题</div>
+
+          <div class="col-md-12">
+              <div class="panel panel-default">
+                  <div class="panel-body">
+                      <h1 class="title-color">任务列表</h1>
+                      <h1 class="title-color-yellow">任务列表</h1>
+                      <h1 class="title-color-email">任务列表</h1>
+                  </div>
+              </div>
+          </div>
+          <div class="alert alert-success col-md-12" role="alert">按钮组</div>
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="button-group"></div>
+                        <script>
+                              $(".button-group").app('buttongroup',{});
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+
+          <div class="alert alert-success col-md-12" role="alert">下拉框</div>
+          <div class="col-md-12">
+              <div class="panel panel-default">
+                  <div class="panel-body">
+                      <div class="drop"></div>
+                      <script>
+                           $(".drop").app('combobox',{
+                             id : 'combobox'
+                           });
+                      </script>
+                  </div>
+              </div>
+
+
+          </div>
+
+
+
+
+          <div class="alert alert-success col-md-12" role="alert">时间插件</div>
+
+            <div class="col-md-12 ">
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <input type="text" readonly="readonly" placeholder="请选择开始时间" id="begintime" class="laydate-icon " />
+                        <input type="text" readonly="readonly" placeholder="请选择结束时间" id="endtime" class="laydate-icon  " />
+                    </div>
+                </div>
+
+              <script>
+                  timeChoice();
+              </script>
+            </div>
+
+
+          <div class="alert alert-success col-md-12" role="alert">按钮</div>
+
+            <div class="col-md-12">
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <button class="greenbutton">查询</button>
+                        <button class="whitebutton">重置</button>
+                    </div>
+                </div>
+              <script>
+                  butClick('.greenbutton','#37958a');
+              </script>
+            </div>
+
+          <div class="alert alert-success col-md-12" role="alert">分页</div>
+
+            <div class="col-md-12">
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div id='page'></div>
+                    </div>
+                </div>
+               <script>
+                  pagePlug('#page');
+               </script>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</body>
+
+</html>
