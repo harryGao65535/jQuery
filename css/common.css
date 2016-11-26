@@ -1,0 +1,512 @@
+/*
+* 公用CSS
+*/
+body {
+    margin: 0 auto;
+    font-family:'Microsoft Yahei';
+    font-size: 12px;
+}
+body,
+iframe,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+fieldset,
+ul,
+ol,
+dl,
+dt,
+dd,
+form,
+input,
+button,
+textarea,
+select,
+i {
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+    font-family: 'Microsoft YaHei';
+    letter-spacing: 0.5px;
+}
+/* html5 */
+article,
+aside,
+header,
+section,
+footer,
+nav,
+figure,
+menu {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+i,
+em,
+u {
+    font-style: normal;
+}
+input,
+button,
+select,
+textarea {
+    outline: none;
+}
+label{
+	margin-bottom:0px;
+}
+/*
+    ie11 input
+*/
+input::-ms-clear { display: none; }
+.clear {
+    clear: both;
+}
+.clear10 {
+    clear: both;
+    height:10px;
+}
+/*
+* 红色*
+*/
+.redx{
+	color:#ff0000;
+	font-size:18px;
+}
+/*
+* margin 边距
+*/
+.margintop10{
+	margin-top:10px;
+}
+.margintop{
+	margin-top:15px;
+}
+/***************************begin******************************************/
+
+/*
+*青色小标标题
+*ghr
+*2016.8.19
+*/
+.title-color{
+    color: #121212;
+    font-size: 16px;
+    background-image: url("../images/refresh.png");
+    background-repeat: no-repeat;
+    background-position: 1px ;
+    padding-left: 33px;
+    line-height: 30px;
+    font-weight: bold;
+   /*  margin-top: 15px; */
+}
+/*
+* 黄色小标标题
+* ghr
+* 2016.8.19
+*/
+.title-color-yellow{
+    color: #121212;
+    font-size: 16px;
+    background-image: url("../images/search.png");
+    background-repeat: no-repeat;
+    background-position: 1px ;
+    padding-left: 33px;
+    line-height: 30px;
+    font-weight: bold;
+    /* margin-top: 15px; */
+}
+/*
+*蓝色小标
+*/
+.title-color-email{
+    color: #121212;
+    font-size: 16px;
+    background-image: url("../images/email.png");
+    background-repeat: no-repeat;
+    background-position: 1px ;
+    padding-left: 33px;
+    line-height: 30px;
+    font-weight: bold;
+/*     margin-top: 15px; */
+}
+/*
+* 下拉框 - 白色系列
+* ghr
+*2016.8.19
+*/
+.select-menu{
+    position: relative;
+    width: 150px;
+    float: left;
+}
+.select-menu input{
+  height: 33px;
+  line-height: 33px;
+  width: 100%;
+  border: 1px solid #ebebeb;
+  /* border-radius: 5px; */
+  position: relative;
+  text-indent: 10px;
+}
+.select-menu span{
+  position: absolute;
+  right: 20px;
+  top: 6px;
+  cursor: pointer;
+}
+.select-menu ul{
+    width: 100%;
+    position: absolute;
+    z-index: 9;
+    background-color: #ffffff;
+    border:1px solid #d0d0d0;
+    display: none;
+}
+.select-menu ul li{
+    list-style: none;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    border: none;
+    font-size: 14px;
+    text-indent: 10px;
+    margin-left: 0px;
+}
+.select-listyle{
+    background-color: #24a882;
+    color: #ffffff;
+    width:100%;
+    cursor: pointer;
+}
+/*
+* 下拉框 - 灰色系列
+* ghr
+* 2016.8.19
+*/
+.grayselect{
+    position: relative;
+    width: 240px;
+    float: left;
+}
+.grayselect input{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    font-size: 14px;
+    color: #151515;
+    border: none;
+    text-indent: 10px;
+    background-color: #f6f6f6;
+    border-left: 1px solid #d0d0d0;
+}
+.grayselect span{
+    position: absolute;
+    right: 20px;
+    top: 6px;
+    cursor: pointer;
+}
+.grayselect ul{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    z-index: 8;
+    display: none;
+    position: absolute;
+}
+.grayselect ul li{
+    list-style: none;
+    background-color: #f6f6f6;
+    border-left: 1px solid #d0d0d0;
+    line-height: 30px;
+    margin-top: 0;
+    width: 100%;
+    z-index: 9;
+    font-size: 14px;
+    text-indent: 10px;
+    cursor: pointer;
+}
+/*
+* label样式
+* ghr
+* 2016.8.19
+*/
+.label{
+  width: 120px;
+  font-size: 14px;
+  text-align: left;
+  line-height: 30px;
+  font-weight: normal;
+  padding-left: 20px;
+  color: #151515;
+  float: left;
+  margin-bottom: 0px;
+}
+/*
+* 绿色按钮
+* ghr
+* 2016.8.19
+*/
+.greenbutton{
+    width:98px;
+    max-width:100px;
+    line-height: 30px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #23a768;
+    border:none;
+    font-size: 16px;
+    border-radius: 3px;
+}
+/*
+* 白色按钮
+* ghr
+* 2016.8.19
+*/
+.whitebutton{
+    width:98px;
+    max-width:100px;
+    line-height: 30px;
+    text-align: center;
+    color: #333333;
+    background-color: #ffffff;
+    border:1px solid #333333;
+    font-size: 16px;
+    border-radius: 3px;
+}
+/*
+* 弹出下拉样式
+*/
+.alertselect{
+    width:100%;
+    height:auto;
+    position:relative;
+    float:left;
+}
+.alertselect label{
+    width: 145px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #333333;
+    text-align: left;
+    font-weight: normal;
+    float:left;
+}
+.alertselect span{
+    position: absolute;
+    left: 240px;
+    top: 6px;
+    cursor: pointer;
+}
+.alertselect ol{
+    width:115px;
+    display:none;
+    position:absolute;
+    left:145px;
+    background-color:#ffffff;
+    border:1px solid #dddddd;
+    top:29px;
+    z-index: 99;
+}
+.alertselect ol li{
+    list-style:none;
+    line-height: 30px;
+    height: 30px;
+    font-size: 14px;
+    color: #333333;
+    text-indent: 15px;
+    background-color:#ffffff;
+    cursor:pointer;
+}
+.as-one{
+    width: 115px;
+    line-height: 30px;
+    height: 30px;
+    font-size: 14px;
+    color: #333333;
+    background-color: #f9f9f9;
+    border: 1px solid #ededed;
+    color: #333333;
+    text-indent: 15px;
+    float:left;
+}
+.as-two{
+    width: 504px;
+    line-height: 30px;
+    height: 30px;
+    font-size: 14px;
+    color: #333333;
+    background-color: #f9f9f9;
+    border: 1px solid #ededed;
+    color: #333333;
+    text-indent: 15px;
+}
+/*
+* 模态框
+* 2016.7.5
+*/
+.model-box ol{
+    width: 220px;
+    position: absolute;
+    z-index: 9;
+    background-color: #ffffff;
+    border: 1px solid #d0d0d0;
+    left: -224px;
+    top: 29px;
+    display: none;
+}
+.alertTitle{
+    line-height: 44px;
+    background-color: #273238;
+    color: #ffffff;
+    font-size: 16px;
+    text-indent: 20px;
+    border-radius: 2px;
+}
+
+.alertTitle span{
+    float: right;
+    padding-right: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-dialog {
+    /* width: 536px; */
+    width:450px;
+    min-height: 354px;
+    margin-top: 5%;
+}
+/*
+* 2016.8.18
+* 弹出框按钮 - 2个按钮
+*/
+.alertbutBox{
+	margin-top:20px;
+	margin-bottom:20px;
+	font-size:14px;
+}
+.alertbutBox button:first-child{
+	margin-left:100px;
+	float:left;
+}
+.alertbutBox button:nth-child(2){
+	margin-left:15px;
+}
+/*
+* 单个按钮
+*/
+.alertbutBox-only button:first-child{
+	/* margin-left:223px; */
+	margin-left : 164px;
+	margin-top:20px;
+	margin-bottom:20px;
+	font-size:14px;
+}
+/*
+* 删除弹出框样式
+*/
+.deletestyle{
+	margin-top:50px;
+	margin-bottom:50px;
+}
+/*新增内容弹出框*/
+
+.alertaddbut{
+	margin-top:20px;
+	margin-bottom:20px;
+	font-size:14px;
+}
+.alertaddbut button:first-child{
+	margin-left: 212px;
+	float:left;
+}
+.alertaddbut button:nth-child(2){
+	margin-left:15px;
+}
+/*错误提示文本内容样式*/
+.errstyle{
+	text-align:center;
+	margin-top:95px;
+	margin-bottom:88px;
+}
+/*normal-modal*/
+.normaladdbut{
+	margin-top:20px;
+	margin-bottom:20px;
+	font-size:14px;
+}
+.normaladdbut button:first-child{
+	margin-left: 102px;
+	float:left;
+}
+.normaladdbut button:nth-child(2){
+	margin-left:15px;
+}
+/*分页数样式*/
+.page-count{
+	line-height:35px;
+	font-size:14px;
+}
+/*下拉树*/
+.dtree-menu{
+    position: relative;
+    width: 150px;
+    float: left;
+}
+.dtree-menu input{
+  height: 33px;
+  line-height: 33px;
+  width: 100%;
+  border: 1px solid #d0d0d0;
+  /* border-radius: 5px; */
+  position: relative;
+  text-indent: 10px;
+}
+.dtree-menu h1{
+  position: absolute;
+  top: -8px;
+  cursor: pointer;
+  height: 20px;
+}
+.dtree-menu>ul{
+    width: 227px;
+    position: absolute;
+    z-index: 9;
+    background-color: #ffffff;
+    border:1px solid #d0d0d0;
+    display: none;
+    max-height:220px;
+    overflow:auto;
+    overflow-x: hidden;
+}
+.dtree-menu ul li{
+    list-style: none;
+    line-height: 30px;
+    width: 227px;
+    border: none;
+    font-size: 14px;
+    text-indent: 10px;
+    margin-left: 0px;
+}
+.dtree-listyle{
+    background-color: #24a882;
+    color: #ffffff;
+    width:100%;
+    cursor: pointer;
+}
+/*页面提示*/
+.pagetip{
+	font-size:16px;
+	color:#23a768;
+	line-height:45px;
+}
